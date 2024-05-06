@@ -1,0 +1,75 @@
+Day -4
+
+1. Spread Operator
+
+
+Converts a array into comma values.
+
+[1,2,3,5] into 1,2,3,5
+
+
+2. Rest Operator
+
+Used in Arguments of a function.( while reciving a input)
+
+example:
+
+funciton Display(...input)
+{
+	Console.log(input)
+}
+
+
+Diff b/w Spread and Rest
+
+Spread : used while sending the input data to a function
+
+Rest: Used while receiving a input date in a function (Arguments)
+
+
+3. Array Destructure
+
+let marks=[99,95]
+
+//let tamil=marks[0]
+//let english=marks[1]
+
+// Other simple way
+
+let[tamil,english]=marks
+
+4. //Object Destructure
+
+let candidate={
+    name:"Harish",
+    email:"rvhar@gmail.com",
+    address:{
+        No:"9",
+        Street:"lakshmi Nagar",
+        City:"Madurai"
+    }
+}
+
+
+5. Object Shorthand
+
+//Object shorthand
+
+let name="Harish"
+let husof="Pavi"
+
+let details={name,husof}
+
+console.log(details)
+
+let{name,email}=candidate
+
+//option-1
+//let{No,Street,City}=candidate.address
+
+//option-2
+let{address}=candidate
+let{No,Street,City}=address
+
+console.log(name,email)
+console.log(No,Street,City)
